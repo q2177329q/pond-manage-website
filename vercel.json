@@ -8,11 +8,13 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
+      "source": "/api/:path*",
+      "destination": "https://proapi.azurewebsites.net/:path*"
+    }
+  ],
+  "routes": [
     {
       "src": "/static/(.*)",
       "dest": "/$1"
