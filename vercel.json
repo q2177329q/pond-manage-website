@@ -12,16 +12,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://proapi.azurewebsites.net/:path*"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "/$1"
+      "src": "/static/:path*",
+      "dest": "/:path*"
     },
     {
       "src": "/(.*)\\.(.+)$",
