@@ -14,16 +14,16 @@
       "destination": "https://proapi.azurewebsites.net/:path*"
     },
     {
-      "src": "/static/:path*",
-      "dest": "/:path*"
+      "source": "/static/:path*",
+      "destination": "/:path*"
     },
     {
-      "src": "/(.*)\\.(.+)$",
-      "dest": "/$1.$2"
+      "source": "/(.*)\\.(.+)$",
+      "destination": "/$1.$2"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
