@@ -39,3 +39,8 @@ screenshot
 .eslintcache
 
 build
+
+
+/dist
+/node_modules
+.vercel
